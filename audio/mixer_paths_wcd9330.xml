@@ -1076,10 +1076,6 @@
             <ctl name="Headphone Playback Volume" value="25"/>
     </path>
 
-    <path name="headphones">
-        <path name="headset" />
-    </path>
-
     <path name="speaker-and-headphones">
         <path name="spk-ear" />
             <ctl name="DAC1 Playback Volume" value="170"/>
@@ -1210,26 +1206,6 @@
         <path name="main-sub-mic" />
             <ctl name="IN3 Boost Volume" value="16"/>
             <ctl name="STO1 ADC Capture Volume" value="47"/>
-    </path>
-
-    <path name="headset-mic">
-        <path name="rec-headset-mic" />
-    </path>
-
-    <path name="handset-mic">
-        <path name="rec-main-mic" />
-    </path>
-
-    <path name="voice-rec-mic">
-       <path name="rec-main-mic" />
-   </path>
-
-    <path name="voice-rec-dmic-ef">
-        <path name="rec-stereo-mic" />
-    </path>
-
-    <path name="speaker-mic">
-        <path name="rec-main-mic" />
     </path>
 
     <!-- end of Recording Scenario -->
