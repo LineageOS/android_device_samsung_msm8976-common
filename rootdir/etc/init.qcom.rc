@@ -1446,6 +1446,12 @@ on post-fs-data
     chown system radio /sys/class/fingerprint/fingerprint/name
     chown system radio /sys/class/fingerprint/fingerprint/vendor
 
+    # TS/TK Power permission
+    chmod 0660 /sys/class/input/input1/enabled
+    chown system system /sys/class/input/input1/enabled
+    chmod 0660 /sys/class/input/input2/enabled
+    chown system system /sys/class/input/input2/enabled
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     write /sys/block/dm-0/queue/read_ahead_kb 128
