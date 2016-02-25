@@ -57,6 +57,9 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys4/restart_level "related"
 
 on fs
+    wait /dev/block/platform/soc.0/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc.0/${ro.boot.bootdevice} /dev/block/bootdevice
+
     wait /dev/block/bootdevice
     mount_all fstab.qcom
     write /proc/sys/vm/swappiness 100
