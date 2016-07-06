@@ -109,7 +109,7 @@ static char *camera_fixup_getparams(int id __unused, const char *settings)
     params.dump();
 #endif
 
-    // Stub
+    params.remove(CameraParameters::KEY_AUTO_WHITEBALANCE_LOCK_SUPPORTED);
 
 #if !LOG_NDEBUG
     ALOGV("%s: fixed parameters:", __FUNCTION__);
