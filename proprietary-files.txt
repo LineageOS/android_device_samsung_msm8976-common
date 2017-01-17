@@ -437,12 +437,10 @@ vendor/lib/libxml.so
 
 # Sensors
 lib64/hw/sensors.msm8952.so
+vendor/etc/yas_set.cfg
 vendor/lib64/libsensor1.so
 vendor/lib64/libyasalgo.so
-vendor/lib64/sensor_calibrate.so
 vendor/lib/libsensor1.so
-vendor/lib/libyasalgo.so
-vendor/lib/sensor_calibrate.so
 
 # Thermal
 vendor/bin/thermal-engine
