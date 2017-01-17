@@ -53,7 +53,7 @@ ro.sf.lcd_density=320
 ro.sf.hwrotation=270
 
 # FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/config
+ro.frp.pst=/dev/block/persistent
 
 # Media
 media.msm8956hw=0
