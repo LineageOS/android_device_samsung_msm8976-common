@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# inherit from the proprietary version
+$(call inherit-product, vendor/samsung/msm8976-common/msm8976-common-vendor.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 

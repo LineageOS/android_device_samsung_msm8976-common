@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# inherit from the proprietary version
+-include vendor/samsung/msm8976-common/BoardConfigVendor.mk
+
 VENDOR_PATH := device/samsung/msm8976-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
