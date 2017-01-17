@@ -141,10 +141,6 @@ vendor/lib/libmmcamera_vpu_module.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmorpho_easy_hdr.so
-vendor/lib/libmorpho_hdr_checker.so
-vendor/lib/libmorpho_image_stab4.so
-vendor/lib/libmorpho_panorama_gp.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
