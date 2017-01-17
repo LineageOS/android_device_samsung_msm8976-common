@@ -25,7 +25,7 @@ voice.record.conc.disabled=false
 
 # Bluetooth
 bluetooth.hfp.client=1
-qcom.bluetooth.soc=smd
+qcom.bluetooth.soc=rome
 
 # Camera
 media.camera.ts.monotonic=0
