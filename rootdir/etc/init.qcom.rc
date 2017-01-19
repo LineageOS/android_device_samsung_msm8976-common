@@ -34,6 +34,7 @@ on early-init
     write /sys/class/leds/lcd-backlight/trigger "backlight"
 
     mkdir /firmware 0771 system system
+    mkdir /firmware-modem 0771 system system
     mkdir /system 0777 root root
     symlink /data/tombstones /tombstones
     mkdir /dsp 0771 media media
@@ -79,6 +80,12 @@ on fs
     write /proc/sys/vm/swappiness 100
     mkdir /persist/data 0700 system system
     restorecon_recursive /persist
+    restorecon_recursive /dsp
+    chown system radio /efs
+    chmod 0771 /efs
+    restorecon_recursive /efs
+
+    rm -rf /efs/dmverity
 
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
