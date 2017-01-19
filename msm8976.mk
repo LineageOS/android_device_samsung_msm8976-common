@@ -31,7 +31,7 @@ TARGET_SCREEN_WIDTH := 1536
 # Device characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
