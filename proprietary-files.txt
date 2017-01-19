@@ -454,4 +454,3 @@ vendor/lib/libTimeService.so
 
 # WiFi
 bin/cnss-daemon
-bin/wcnss_service
