@@ -70,9 +70,6 @@ persist.data.mode=concurrent
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
-# Radio
-ro.radio.noril=yes
-
 # Storage
 ro.sys.sdcardfs=true
 
