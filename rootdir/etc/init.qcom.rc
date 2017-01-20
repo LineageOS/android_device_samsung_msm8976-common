@@ -1458,7 +1458,6 @@ on property:sys.boot_completed=1
 
 on property:vold.decrypt=trigger_restart_framework
     start config_bluetooth
-    start wcnss-service
     start config_bt_addr
 
 on property:persist.env.fastdorm.enabled=true
@@ -1661,12 +1660,6 @@ service audiod /system/bin/audiod
    class late_start
    user system
    group system
-
-service wcnss-service /system/bin/wcnss_service
-    class late_start
-    user system
-    group system wifi radio
-    oneshot
 
 on charger
     start hvdcp_opti
