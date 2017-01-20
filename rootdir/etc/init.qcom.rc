@@ -1533,32 +1533,11 @@ on property:hw.fm.init=0
 on property:hw.fm.init=1
     write /sys/module/radio_iris_transport/parameters/fmsmd_set 1
 
-# QMUX must be in multiple groups to support external process connections
-service qmuxd /system/bin/qmuxd
-    class main
-    user root
-    group radio audio bluetooth gps nfc qcom_diag
-    writepid /dev/cpuset/system-background/tasks
-
-service netmgrd /system/bin/netmgrd
-    class main
-    writepid /dev/cpuset/system-background/tasks
-
 service ipacm /system/bin/ipacm
     class main
     user net_admin
     group net_admin inet
     writepid /dev/cpuset/system-background/tasks
-
-service qti /system/vendor/bin/qti
-    class main
-    user radio
-    group radio net_raw qcom_diag usb net_admin
-    writepid /dev/cpuset/system-background/tasks
-
-on property:ro.use_data_netmgrd=false
-    # netmgr not supported on specific target
-    stop netmgrd
 
 # Adjust socket buffer to enlarge TCP receive window for high bandwidth
 # but only if ro.data.large_tcp_window_size property is set.
@@ -1625,7 +1604,6 @@ service msm_irqbal_lb /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqba
     class core
     user root
     group root
-    disabled
     writepid /dev/cpuset/system-background/tasks
 
 on property:vold.decrypt=trigger_restart_min_framework
