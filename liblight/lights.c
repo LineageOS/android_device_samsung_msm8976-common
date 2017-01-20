@@ -90,7 +90,7 @@ set_light_backlight(struct light_device_t* dev,
 {
     int err = 0;
     int brightness = rgb_to_brightness(state);
-    if(!dev) {
+    if (!dev) {
         return -1;
     }
     pthread_mutex_lock(&g_lock);
@@ -105,7 +105,7 @@ set_light_buttons(struct light_device_t* dev,
 {
     int err = 0;
     int on = (state->color & 0xFF);
-    if(!dev) {
+    if (!dev) {
         return -1;
     }
     pthread_mutex_lock(&g_lock);
@@ -149,7 +149,7 @@ static int open_lights(const struct hw_module_t* module, char const* name,
 
     struct light_device_t *dev = malloc(sizeof(struct light_device_t));
 
-    if(!dev)
+    if (!dev)
         return -ENOMEM;
 
     memset(dev, 0, sizeof(*dev));
