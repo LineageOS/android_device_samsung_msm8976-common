@@ -432,6 +432,10 @@ vendor/lib64/libxml.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libxml.so
 
+# SEC
+lib64/libsecnativefeature.so
+lib/libsecnativefeature.so
+
 # Sensors
 lib64/hw/sensors.msm8952.so
 vendor/etc/yas_set.cfg
