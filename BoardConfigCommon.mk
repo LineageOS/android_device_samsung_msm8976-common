@@ -101,10 +101,6 @@ BOARD_HARDWARE_CLASS += \
     hardware/cyanogen/cmhw \
     $(VENDOR_PATH)/cmhw
 
-# CNE
-BOARD_USES_QCNE := true
-TARGET_LDPRELOAD := libNimsWrap.so
-
 # Display
 BOARD_USES_ADRENO := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
