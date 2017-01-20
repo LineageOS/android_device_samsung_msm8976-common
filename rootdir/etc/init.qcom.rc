@@ -261,6 +261,15 @@ on boot
     chown system media_rw /sys/class/graphics/fb0/csc_cfg
     chmod 0660 /sys/class/graphics/fb0/csc_cfg
 
+    # Permissions for Input Device
+    chown system radio /sys/class/sec/tsp/cmd
+    chown system system /sys/class/sec/tsp/input/enabled
+    chmod 0660 /sys/class/sec/tsp/input/enabled
+    chown system system /sys/class/sec/sec_touchkey/input/enabled
+    chmod 0660 /sys/class/sec/sec_touchkey/input/enabled
+    chown system system /sys/class/sec/sec_touchkey/brightness
+    chmod 0660 /sys/class/sec/sec_touchkey/brightness
+
     # Permissions for SENSOR
     # Fingerprint_sensor
     chown system radio /sys/class/fingerprint/fingerprint/type_check
