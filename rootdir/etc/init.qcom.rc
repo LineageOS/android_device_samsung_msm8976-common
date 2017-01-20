@@ -1320,6 +1320,10 @@ on boot
     chmod 0760 /sys/class/sensor_event/symlink/proximity_sensor/trigger/current_trigger
     chmod 0760 /sys/class/sensor_event/symlink/proximity_sensor/uevent
 
+    # BT
+    chown radio net_bt_stack /efs/bluetooth/bt_addr
+    chmod 0640 /efs/bluetooth/bt_addr
+
 # msm specific files that need to be created on /data
 on post-fs-data
     # Create directory for TZ Apps

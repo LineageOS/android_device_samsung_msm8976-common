@@ -26,6 +26,7 @@ voice.record.conc.disabled=false
 # Bluetooth
 bluetooth.hfp.client=1
 qcom.bluetooth.soc=rome
+ro.bt.bdaddr_path=/efs/bluetooth/bt_addr
 
 # Camera
 media.camera.ts.monotonic=0
