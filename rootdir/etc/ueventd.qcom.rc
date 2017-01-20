@@ -260,3 +260,64 @@
 # FPC
 /sys/devices/soc.0/fpc_fpc1020.*        irq             0660        system      system
 /sys/devices/soc.0/fpc_fpc1020.*        enable_wakeup   0660        system      system
+
+# sensor
+/dev/iio:device*      0760  system   radio
+
+# accel, gyro
+/sys/devices/iio:device*		0760  system   radio
+/sys/devices/iio:device* name		0760  system   radio
+/sys/devices/iio:device* sampling_frequency		0760  system   radio
+/sys/devices/iio:device* sampling_frequency_available	0760  system   radio
+/sys/devices/iio:device* buffer		0760  system   radio
+/sys/devices/iio:device* buffer/enable	0760  system   radio
+/sys/devices/iio:device* buffer/length	0760  system   radio
+/sys/devices/iio:device* trigger	0760  system   radio
+/sys/devices/iio:device* trigger/current_trigger	0760  system   radio
+/sys/devices/iio:device* scan_elements		0760  system   radio
+/sys/devices/iio:device* scan_elements/in_accel_x_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_accel_y_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_accel_z_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_timestamp_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_anglvel_x_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_anglvel_y_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_anglvel_z_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_sign_motion_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_step_counter_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_step_detector_en	0760  system   radio
+/sys/devices/iio:device* scan_elements/in_tilt_en		0760  system   radio
+/sys/devices/iio:device* self_test		0760  system   radio
+/sys/devices/iio:device* self_test_available	0760  system   radio
+/sys/devices/iio:device* self_test_run		0760  system   radio
+/sys/devices/iio:device* in_accel_scale_available	0760  system   radio
+/sys/devices/iio:device* in_accel_x_raw			0760  system   radio
+/sys/devices/iio:device* in_accel_y_raw			0760  system   radio
+/sys/devices/iio:device* in_accel_z_raw			0760  system   radio
+/sys/devices/iio:device* in_accel_x_scale		0760  system   radio
+/sys/devices/iio:device* in_accel_y_scale		0760  system   radio
+/sys/devices/iio:device* in_accel_z_scale		0760  system   radio
+/sys/devices/iio:device* in_anglvel_scale_available	0760  system   radio
+/sys/devices/iio:device* in_anglvel_x_raw		0760  system   radio
+/sys/devices/iio:device* in_anglvel_y_raw		0760  system   radio
+/sys/devices/iio:device* in_anglvel_z_raw		0760  system   radio
+/sys/devices/iio:device* in_anglvel_x_scale		0760  system   radio
+/sys/devices/iio:device* in_anglvel_y_scale		0760  system   radio
+/sys/devices/iio:device* in_anglvel_z_scale		0760  system   radio
+/sys/devices/iio:device* in_step_counter_raw		0760  system   radio
+/sys/devices/iio:device* max_delivery_rate		0760  system   radio
+/sys/devices/iio:device* reset_counter			0760  system   radio
+/sys/devices/iio:device* dev				0760  system   radio
+/sys/devices/iio:device* uevent				0760  system   radio
+/sys/devices/iio:device* power				0760  system   radio
+/sys/devices/iio:device* power/autosuspend_delay_ms	0760  system   radio
+/sys/devices/iio:device* power/control			0760  system   radio
+/sys/devices/iio:device* power/runtime_active_time	0760  system   radio
+/sys/devices/iio:device* power/runtime_status		0760  system   radio
+/sys/devices/iio:device* power/runtime_suspended_time	0760  system   radio
+/sys/devices/iio:device* events				0760  system   radio
+/sys/devices/iio:device* events/in_sign_motion_thresh_rising_en		0760  system   radio
+/sys/devices/iio:device* events/in_sign_motion_thresh_rising_value	0760  system   radio
+/sys/devices/iio:device* events/in_step_detector_thresh_rising_en	0760  system   radio
+/sys/devices/iio:device* events/in_step_detector_thresh_rising_value	0760  system   radio
+/sys/devices/iio:device* events/in_tilt_thresh_rising_en		0760  system   radio
+/sys/devices/iio:device* events/in_tilt_thresh_rising_value		0760  system   radio
