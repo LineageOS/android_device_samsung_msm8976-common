@@ -182,17 +182,6 @@ on boot
     # Allow access for CCID command/response timeout configuration
     chown system system /sys/module/ccid_bridge/parameters/bulk_msg_timeout
 
-    # LED
-    chmod 0666 /sys/class/leds/led:torch_0/brightness
-    chmod 0666 /sys/class/leds/led:torch_1/brightness
-    chmod 0666 /sys/class/leds/led:switch/brightness
-    chown system system /sys/class/leds/red/blink
-    chown system system /sys/class/leds/green/blink
-    chown system system /sys/class/leds/blue/blink
-    chown system system /sys/class/leds/red/led_time
-    chown system system /sys/class/leds/green/led_time
-    chown system system /sys/class/leds/blue/led_time
-
     # Permissions for Camera
     chown system system /sys/class/camera/rear/isp_core
     chown system system /sys/class/camera/rear/rear_camfw_full
@@ -228,19 +217,7 @@ on boot
     chown system system /sys/class/timed_output/vibrator/intensity
 
     # Permissions for Leds
-    chown system system /sys/class/leds/keyboard-backlight/brightness
     chown system system /sys/class/leds/lcd-backlight/brightness
-    chown system system /sys/class/leds/button-backlight/brightness
-    chown system system /sys/class/leds/jogball-backlight/brightness
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/red/blink
-    chown system system /sys/class/leds/green/brightness
-    chown system system /sys/class/leds/green/blink
-    chown system system /sys/class/leds/blue/brightness
-    chown system system /sys/class/leds/blue/blink
-    chown system system /sys/class/leds/red/device/grpfreq
-    chown system system /sys/class/leds/red/device/grppwm
-    chown system system /sys/class/leds/red/device/blink
 
     # Permissions for LCD
     chown system system /sys/class/lcd/panel/adaptive_control
