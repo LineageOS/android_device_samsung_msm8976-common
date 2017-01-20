@@ -95,10 +95,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gello
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
