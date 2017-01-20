@@ -234,9 +234,6 @@ etc/firmware/ois_SE_BU24219.bin
 etc/firmware/ois_SP_BU24219.bin
 etc/firmware/ois_VE_BU24219.bin
 
-# Charger
-bin/hvdcp_opti
-
 # DRM
 bin/qseecomd
 vendor/lib64/lib-sec-disp.so
