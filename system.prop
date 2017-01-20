@@ -71,9 +71,6 @@ persist.data.mode=concurrent
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
-# Storage
-ro.sys.sdcardfs=true
-
 # TCP
 net.tcp.2g_init_rwnd=10
 
