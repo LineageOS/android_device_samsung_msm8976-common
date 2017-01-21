@@ -1211,6 +1211,15 @@
             <ctl name="IN3 Boost Volume" value="16"/>
             <ctl name="STO1 ADC Capture Volume" value="47"/>
     </path>
+
+    <path name="headset-mic">
+        <path name="rec-headset-mic" />
+    </path>
+
+    <path name="handset-mic">
+        <path name="rec-main-mic" />
+    </path>
+
     <!-- end of Recording Scenario -->
 
     <!-- ================================================================ -->
