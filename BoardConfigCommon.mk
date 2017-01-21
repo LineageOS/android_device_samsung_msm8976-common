@@ -17,6 +17,7 @@
 # inherit from the proprietary version
 -include vendor/samsung/msm8976-common/BoardConfigVendor.mk
 
+BOARD_VENDOR := samsung
 VENDOR_PATH := device/samsung/msm8976-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
@@ -40,7 +41,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno510
 ENABLE_CPUSETS := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := msm8952
+TARGET_BOOTLOADER_BOARD_NAME := MSM8952
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
@@ -148,9 +149,6 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
