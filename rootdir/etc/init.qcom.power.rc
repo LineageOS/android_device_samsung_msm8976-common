@@ -144,12 +144,18 @@ on enable-low-power
     write /proc/sys/kernel/sched_grp_downmigrate 110
     write /proc/sys/kernel/sched_enable_thread_grouping 1
 
-    # Enable adaptive LMK
+    # LMK & Process reclaim
+    write /sys/module/lowmemorykiller/parameters/adj_max_shift 354
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,55296,80640"
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 81250
 
-    chmod 0660 /sys/module/lowmemorykiller/parameters/minfree
-    write /sys/module/lowmemorykiller/parameters/minfree "14746,18432,22118,25805,40000,55000"
+    write /sys/module/process_reclaim/parameters/enable_process_reclaim 1
+    write /sys/module/process_reclaim/parameters/min_score_adj 354
+    write /sys/module/process_reclaim/parameters/per_swap_size 1024
+    write /sys/module/process_reclaim/parameters/pressure_max 70
+    write /sys/module/process_reclaim/parameters/pressure_min 10
+    write /sys/module/process_reclaim/parameters/swap_opt_eff 30
 
 on charger
     # Disable thermal
