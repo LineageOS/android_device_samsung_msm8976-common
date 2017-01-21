@@ -41,6 +41,10 @@ on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
+    mkdir /bt_firmware
+    symlink /system/etc/firmware/btfw32.tlv /bt_firmware/image/btfw32.tlv
+    symlink /system/etc/firmware/btnv32.bin /bt_firmware/image/btnv32.bin
+
 on init
     # Set permissions for persist partition
     mkdir /persist 0771 system system
