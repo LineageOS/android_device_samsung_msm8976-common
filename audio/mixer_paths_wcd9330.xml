@@ -1076,6 +1076,10 @@
             <ctl name="Headphone Playback Volume" value="25"/>
     </path>
 
+    <path name="headphones">
+        <path name="headset" />
+    </path>
+
     <path name="speaker-and-headphones">
         <path name="spk-ear" />
             <ctl name="DAC1 Playback Volume" value="170"/>
