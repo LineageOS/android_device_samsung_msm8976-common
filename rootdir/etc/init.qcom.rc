@@ -1695,4 +1695,5 @@ service fingerprintd /system/bin/fingerprintd
     user system
     group drmrpc input system
     socket fpce stream 0660 system system
+    disabled
     writepid /dev/cpuset/system-background/tasks
