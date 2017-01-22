@@ -93,14 +93,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gello
 
-# Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
-
-# DataServices
-PRODUCT_PACKAGES += \
-    librmnetctl
-
 # Display
 PRODUCT_PACKAGES += \
     AdvancedDisplay \
@@ -109,10 +101,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8952 \
     memtrack.msm8952 \
     liboverlay
-
-# Face detection extension
-PRODUCT_PACKAGES += \
-    org.codeaurora.camera
 
 # Fingerprint
 PRODUCT_PACKAGES += \
