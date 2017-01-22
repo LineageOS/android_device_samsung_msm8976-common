@@ -42,6 +42,7 @@ on early-init
     chmod 0755 /sys/kernel/debug
 
     mkdir /bt_firmware
+    mkdir /bt_firmware/image
     symlink /system/etc/firmware/btfw32.tlv /bt_firmware/image/btfw32.tlv
     symlink /system/etc/firmware/btnv32.bin /bt_firmware/image/btnv32.bin
 
