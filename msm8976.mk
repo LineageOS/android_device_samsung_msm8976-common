@@ -103,6 +103,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gello
 
+# Camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/libc_shim.so:system/lib/libc_shim.so
+
 # Display
 PRODUCT_PACKAGES += \
     AdvancedDisplay \
