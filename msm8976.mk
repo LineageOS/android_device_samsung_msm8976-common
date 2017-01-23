@@ -110,7 +110,6 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    AdvancedDisplay \
     copybit.msm8952 \
     gralloc.msm8952 \
     hwcomposer.msm8952 \
