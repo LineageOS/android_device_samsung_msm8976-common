@@ -1,1 +1,17 @@
-/system/bin/timekeep                     u:object_r:timekeep_exec:s0
+# Cache
+/dev/block/bootdevice/by-name/cache          u:object_r:cache_block_device:s0
+
+# EFS
+/dev/block/bootdevice/by-name/efs            u:object_r:efs_block_device:s0
+/efs/bluetooth(/.*)?                         u:object_r:bluetooth_efs_file:s0
+/efs/FactoryApp(/.*)?                        u:object_r:app_efs_file:s0
+
+# FRP
+/dev/block/bootdevice/by-name/persistent     u:object_r:frp_block_device:s0
+
+# mDNIe
+/sys/devices/virtual/mdnie/mdnie/mode        u:object_r:sysfs_mdnie:s0
+/sys/devices/virtual/mdnie/mdnie/scenario    u:object_r:sysfs_mdnie:s0
+
+# TimeKeep
+/system/bin/timekeep                         u:object_r:timekeep_exec:s0
