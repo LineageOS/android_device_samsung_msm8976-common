@@ -1628,9 +1628,6 @@ service msm_irqbal_lb /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqba
     group root
     writepid /dev/cpuset/system-background/tasks
 
-on property:vold.decrypt=trigger_restart_min_framework
-    start time_daemon
-
 # Start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
@@ -1659,10 +1656,11 @@ service thermal-engine /system/vendor/bin/thermal-engine
     group root
     writepid /dev/cpuset/system-background/tasks
 
-service time_daemon /system/bin/time_daemon
+service timekeep /system/bin/timekeep restore
     class late_start
     user root
     group root
+    oneshot
     writepid /dev/cpuset/system-background/tasks
 
 service audiod /system/bin/audiod
