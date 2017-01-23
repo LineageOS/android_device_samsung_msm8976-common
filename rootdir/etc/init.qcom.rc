@@ -275,10 +275,6 @@ on boot
     chmod 0660 /sys/class/sec/sec_touchkey/brightness
 
     # Permissions for SENSOR
-    # Fingerprint_sensor
-    chown system radio /sys/class/fingerprint/fingerprint/type_check
-    chown system radio /sys/class/fingerprint/fingerprint/name
-    chown system radio /sys/class/fingerprint/fingerprint/vendor
     # Accelerometer_sensor
     chown system radio /sys/class/sensors/accelerometer_sensor/raw_data
     chown system radio /sys/class/sensors/accelerometer_sensor/calibration
@@ -1448,10 +1444,6 @@ on post-fs-data
     chown radio radio /data/misc/radio/db_check_done
     chmod 0660 /data/misc/radio/db_check_done
 
-    # Fingerprint
-    mkdir /data/fpc 0770 system system
-    mkdir /data/fpc/s 0770 system system
-
     mkdir /data/tombstones 0771 system system
     mkdir /tombstones/modem 0771 system system
     mkdir /tombstones/lpass 0771 system system
@@ -1461,6 +1453,16 @@ on post-fs-data
     mkdir /persist/data/tz 0700 system system
     mkdir /data/misc/dts 0770 media audio
     mkdir /data/misc/audio_pp 0771 media audio
+
+    # Fingerprint
+    mkdir /dev/validity 0770 system system
+    mkdir /data/validity 0770 system system
+
+    chmod 0660 /dev/vfsspi
+    chown system system /dev/vfsspi
+    chown system radio /sys/class/fingerprint/fingerprint/type_check
+    chown system radio /sys/class/fingerprint/fingerprint/name
+    chown system radio /sys/class/fingerprint/fingerprint/vendor
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
@@ -1697,6 +1699,5 @@ on property:sys.shutdown.requested=*
 service fingerprintd /system/bin/fingerprintd
     class late_start
     user system
-    group drmrpc input system
-    socket fpce stream 0660 system system
+    group system
     writepid /dev/cpuset/system-background/tasks
