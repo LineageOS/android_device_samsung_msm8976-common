@@ -1,2 +1,3 @@
 type app_efs_file, file_type;
 type sysfs_mdnie, fs_type, sysfs_type;
+type biometrics_data_file, file_type, data_file_type;

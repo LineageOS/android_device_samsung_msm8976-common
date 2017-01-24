@@ -11,6 +11,7 @@
 
 # Fingerprint
 /dev/vfsspi                                  u:object_r:vfsspi_device:s0
+/data/biometrics(/.*)?                       u:object_r:biometrics_data_file:s0
 
 # mDNIe
 /sys/devices/virtual/mdnie/mdnie/mode        u:object_r:sysfs_mdnie:s0
