@@ -486,10 +486,8 @@ bin/cnss-daemon
 # WiFi Firmware
 etc/firmware/bdwlan30.bin
 etc/firmware/bdwlan30_R01.bin
-etc/firmware/bdwlan32.bin
 etc/firmware/otp30.bin
 etc/firmware/qwlan30.bin
 etc/firmware/utf30.bin
 etc/firmware/utfbd30.bin
 etc/firmware/utfbd30_R01.bin
-etc/firmware/utfbd32.bin
