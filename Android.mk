@@ -55,20 +55,4 @@ $(RFS_MSM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS)
 
-WCNSS_INI_SYMLINK := $(TARGET_OUT_ETC)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
-$(WCNSS_INI_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "WCNSS config ini link: $@"
-	@rm -rf $@
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf /system/etc/wifi/$(notdir $@) $@
-
-WCNSS_MAC_SYMLINK := $(TARGET_OUT_ETC)/firmware/wlan/qca_cld/wlan_mac.bin
-$(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "WCNSS MAC bin link: $@"
-	@rm -rf $@
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf /persist/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
-
 endif
