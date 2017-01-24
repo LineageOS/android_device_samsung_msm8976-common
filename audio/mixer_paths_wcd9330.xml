@@ -1220,6 +1220,10 @@
         <path name="rec-main-mic" />
     </path>
 
+    <path name="voice-rec-dmic-ef">
+        <path name="rec-stereo-mic" />
+    </path>
+
     <!-- end of Recording Scenario -->
 
     <!-- ================================================================ -->
