@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_eaeefdb3",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-01-25T10:20:50Z",
+      "side": 0,
+      "message": "Probably the T713/T719 models have a proximity sensor",
+      "range": {
+        "startLine": 289,
+        "startChar": 0,
+        "endLine": 300,
+        "endChar": 68
+      },
+      "revId": "039887cb7cc04f9b027c5ea2caf72fbb94f5e720",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
