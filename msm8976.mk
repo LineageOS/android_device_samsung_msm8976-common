@@ -105,8 +105,8 @@ PRODUCT_PACKAGES += \
     Gello
 
 # Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/libc_shim.so:system/lib/libc_shim.so
+PRODUCT_PACKAGES += \
+    libc_shim
 
 # Display
 PRODUCT_PACKAGES += \
