@@ -7,7 +7,10 @@ audio.offload.buffer.size.kb=64
 audio.offload.gapless.enabled=true
 audio.offload.min.duration.secs=30
 audio.offload.multiple.enabled=false
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
 audio.offload.track.enable=false
+audio.offload.video=true
 audio.playback.mch.downsample=true
 audio.safx.pbe.enabled=true
 
