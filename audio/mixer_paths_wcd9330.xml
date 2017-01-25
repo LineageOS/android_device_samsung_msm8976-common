@@ -1118,6 +1118,10 @@
             <ctl name="Headphone Playback Volume" value="31"/>			
     </path>
 
+    <path name="voice-handset">
+        <path name="handset">
+    </path>
+
     <!-- end of Play Scenario -->
 
     <!-- ================================================================ -->
@@ -1213,6 +1217,10 @@
     </path>
 
     <path name="headset-mic">
+        <path name="rec-headset-mic" />
+    </path>
+
+    <path name="voice-headset-mic">
         <path name="rec-headset-mic" />
     </path>
 
