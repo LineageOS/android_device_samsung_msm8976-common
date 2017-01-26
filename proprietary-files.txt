@@ -60,7 +60,7 @@ etc/camera/s5k4h5yc_dw9807_chromatix.xml
 etc/camera/s5k6b2yx_chromatix.xml
 etc/P08QL_s5k4h5yc_module_info.xml
 etc/Q08QL_s5k4h5yc_module_info.xml
-lib/hw/camera.msm8952.so
+lib/hw/camera.msm8952.so:lib/hw/camera.vendor.msm8952.so
 lib/libalawb_algo.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
