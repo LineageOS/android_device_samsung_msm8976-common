@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.msm8952.so \
     libc_shim
 
 # Display
