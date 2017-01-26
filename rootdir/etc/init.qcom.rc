@@ -1640,5 +1640,4 @@ service fingerprintd /system/bin/fingerprintd
     class late_start
     user system
     group system
-    disabled
     writepid /dev/cpuset/system-background/tasks
