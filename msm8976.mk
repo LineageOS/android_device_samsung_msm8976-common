@@ -106,7 +106,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8952.so
+    camera.msm8952.so \
+    Snap
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/libc_shim.so:system/lib/libc_shim.so
