@@ -4,5 +4,7 @@ allow fingerprintd vfsspi_device:chr_file rw_file_perms;
 allow fingerprintd firmware_file:dir search;
 allow fingerprintd firmware_file:file r_file_perms;
 
-allow fingerprintd biometrics_data_file:dir rw_dir_perms;
+type_transition fingerprintd system_data_file:{ dir file } biometrics_data_file;
+allow fingerprintd system_data_file:dir { add_name write };
+allow fingerprintd biometrics_data_file:dir create_dir_perms;
 allow fingerprintd biometrics_data_file:file create_file_perms;
