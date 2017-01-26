@@ -105,6 +105,9 @@ PRODUCT_PACKAGES += \
     Gello
 
 # Camera
+PRODUCT_PACKAGES += \
+    camera.msm8952.so
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/libc_shim.so:system/lib/libc_shim.so
 
