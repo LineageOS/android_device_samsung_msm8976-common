@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_dba9c97c",
+        "filename": "libc_shim/Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-01-26T07:33:46Z",
+      "side": 1,
+      "message": "LOCAL_32_BIT_ONLY :\u003d true\nIt\u0027s used only by camera",
+      "revId": "58d472f7d68e4d1a51d9e5e261932eea4337164f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
