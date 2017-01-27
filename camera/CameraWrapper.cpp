@@ -132,7 +132,7 @@ static char *camera_fixup_setparams(int id, const char *settings)
     params.dump();
 #endif
 
-    // Stub
+    params.set(CameraParameters::KEY_PREVIEW_FPS_RANGE, "7500,30000");
 
 #if !LOG_NDEBUG
     ALOGV("%s: fixed parameters:", __FUNCTION__);
