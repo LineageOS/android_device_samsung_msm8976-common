@@ -104,9 +104,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gello
 
+
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8952.so \
+    camera.msm8952 \
     libc_shim
 
 # Display
