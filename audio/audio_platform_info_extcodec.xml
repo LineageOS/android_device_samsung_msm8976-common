@@ -34,6 +34,9 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" acdb_id="51" />
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" acdb_id="49" />
         <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" acdb_id="35" />
+        <device name="SND_DEVICE_OUT_VOIP_HANDSET" acdb_id="144" />
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER" acdb_id="7" />
+        <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" acdb_id="71" />
 
         <!-- Input devices -->
         <device name="SND_DEVICE_IN_HANDSET_DMIC" acdb_id="105" />
@@ -79,6 +82,9 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" alias="TTY-full" />
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" alias="TTY-headset" />
         <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" alias="TTY-handset" />
+        <device name="SND_DEVICE_OUT_VOIP_HANDSET" alias="voip-handset-comm" />
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER" alias="voip-speaker-comm" />
+        <device name="SND_DEVICE_OUT_VOIP_HEADPHONES" alias="voip-headset-comm" />
 
         <!-- Input devices -->
         <device name="SND_DEVICE_IN_HANDSET_MIC" alias="rec-main-mic" />
