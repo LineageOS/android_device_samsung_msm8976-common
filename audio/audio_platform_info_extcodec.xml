@@ -108,7 +108,6 @@
         <device name="SND_DEVICE_IN_VOICE_TTY_VCO_HANDSET_MIC" alias="TTY-vco-mic" />
         <device name="SND_DEVICE_IN_VOICE_TTY_HCO_HEADSET_MIC" alias="TTY-headset-mic" />
         <device name="SND_DEVICE_IN_VOICE_REC_MIC" alias="vr-main-mic" />
-        <device name="SND_DEVICE_IN_VOICE_REC_HEADSET_MIC" alias="vr-headset-mic" />
         <device name="SND_DEVICE_IN_VOICE_REC_MIC_NS" alias="svoice-NS-mic" />
         <device name="SND_DEVICE_IN_VOICE_REC_DMIC_STEREO" alias="vr-sub-mic" />
         <device name="SND_DEVICE_IN_HANDSET_STEREO_DMIC" alias="rec-stereo-mic" />
