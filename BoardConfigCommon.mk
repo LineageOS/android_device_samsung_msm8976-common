@@ -178,6 +178,12 @@ TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QC_TIME_SERVICES := true
 
+# Ramdisk
+BOARD_ROOT_EXTRA_FOLDERS := dsp efs firmware firmware-modem persist
+BOARD_ROOT_EXTRA_SYMLINKS := /system/etc/firmware/btfw32.tlv:/bt_firmware/image/btfw32.tlv
+BOARD_ROOT_EXTRA_SYMLINKS += /system/etc/firmware/btnv32.bin:/bt_firmware/image/btnv32.bin
+BOARD_ROOT_EXTRA_SYMLINKS += /data/tombstones:/tombstones
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
