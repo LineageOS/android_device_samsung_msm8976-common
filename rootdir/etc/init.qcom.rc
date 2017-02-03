@@ -426,614 +426,552 @@ on boot
     chown system radio /sys/class/sensors/irled_remote/irled_send_result
 
     # BHY
-    chown system radio  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/event_shealth_int
-    chown system radio  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/pedometer_steps
-    chown system radio  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_cadence
-    chown system radio  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_cadence_enable
-    chown system radio  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_enable
-    chown system radio  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_flush_cadence
-    chmod 0760  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/event_shealth_int
-    chmod 0760  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/pedometer_steps
-    chmod 0760  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_cadence_enable
-    chmod 0760  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_enable
-    chmod 0760  /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_flush_cadence
-
-    # IIO
-    chown system radio  /sys/bus/iio/devices/iio:device0
-    chown system radio  /sys/bus/iio/devices/iio:device1
-    chown system radio  /sys/bus/iio/devices/iio:device2
-    chown system radio  /sys/bus/iio/devices/iio:device3
-    chown system radio  /sys/bus/iio/devices/iio:device4
-    chown system radio  /sys/bus/iio/devices/iio:device5
-    chown system radio  /sys/bus/iio/devices/iio:device6
-    chown system radio  /sys/bus/iio/devices/iio:device7
-    chown system radio  /sys/bus/iio/devices/iio:device8
-    chown system radio /sys/bus/iio/devices/iio:device9
-    chown system radio  /sys/bus/iio/devices/iio:device10
-
-    chmod 0760  /sys/bus/iio/devices/iio:device0
-    chmod 0760  /sys/bus/iio/devices/iio:device1
-    chmod 0760  /sys/bus/iio/devices/iio:device2
-    chmod 0760  /sys/bus/iio/devices/iio:device3
-    chmod 0760  /sys/bus/iio/devices/iio:device4
-    chmod 0760  /sys/bus/iio/devices/iio:device5
-    chmod 0760  /sys/bus/iio/devices/iio:device6
-    chmod 0760  /sys/bus/iio/devices/iio:device7
-    chmod 0760  /sys/bus/iio/devices/iio:device8
-    chmod 0760 /sys/bus/iio/devices/iio:device9
-    chmod 0760  /sys/bus/iio/devices/iio:device10
-
+    chown system radio /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/event_shealth_int
+    chown system radio /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/pedometer_steps
+    chown system radio /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_cadence
+    chown system radio /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_cadence_enable
+    chown system radio /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_enable
+    chown system radio /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_flush_cadence
+    chmod 0760 /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/event_shealth_int
+    chmod 0760 /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/pedometer_steps
+    chmod 0760 /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_cadence_enable
+    chmod 0760 /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_enable
+    chmod 0760 /sys/bus/i2c/devices/i2c-5/5-0028/iio:device0/shealth_flush_cadence
 
     # lsm6ds3_accel
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_scale_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/reg_dump
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_run
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger/current_trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_scale_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/reg_dump
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_run
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger/current_trigger
 
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_scale_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/reg_dump
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_run
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger/current_trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_scale_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/reg_dump
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_run
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger/current_trigger
+
+    # lsm6ds3_sign_motion
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger/current_trigger
+
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger/current_trigger
+
+    # lsm6ds3_step_c
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/in_step_counter_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/max_delivery_rate
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/reset_counter
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger/current_trigger
+
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/in_step_counter_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/max_delivery_rate
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/reset_counter
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger/current_trigger
+
+    # lsm6ds3_step_d
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger/current_trigger
+
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger/current_trigger
+
+    # lsm6ds3_gyro
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_scale_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_run
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger/current_trigger
+
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_scale_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_run
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger/current_trigger
+
+    # lsm6ds3_tilt
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger/current_trigger
+
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger/current_trigger
+
+    # lsm6ds3_accel
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_scale_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/reg_dump
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_run
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger/current_trigger
+
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_scale_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/reg_dump
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_run
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger/current_trigger
 
 
     # lsm6ds3_sign_motion
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger/current_trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger/current_trigger
 
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger/current_trigger
-
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger/current_trigger
 
     # lsm6ds3_step_c
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/in_step_counter_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/max_delivery_rate
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/reset_counter
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger/current_trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/in_step_counter_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/max_delivery_rate
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/reset_counter
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger/current_trigger
 
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/in_step_counter_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/max_delivery_rate
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/reset_counter
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger/current_trigger
-
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/in_step_counter_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/max_delivery_rate
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/reset_counter
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger/current_trigger
 
     # lsm6ds3_step_d
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger/current_trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger/current_trigger
 
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger/current_trigger
-
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger/current_trigger
 
     # lsm6ds3_gyro
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_scale_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_run
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger/current_trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_scale_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_raw
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_scale
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_available
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_run
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger/current_trigger
 
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_scale_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_run
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger/current_trigger
-
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_scale_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_raw
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_scale
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_available
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_run
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger/current_trigger
 
     # lsm6ds3_tilt
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger/current_trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/enable
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/length
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/dev
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/name
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_en
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_index
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_type
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger
+    chown system radio /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger/current_trigger
 
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger/current_trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/enable
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/length
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/dev
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/name
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_en
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_index
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_type
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger
+    chmod 0760 /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger/current_trigger
 
-
-    # lsm6ds3_accel
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_scale_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/reg_dump
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_run
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger/current_trigger
-
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_scale_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_x_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_y_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/in_accel_z_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/reg_dump
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/sampling_frequency_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_x_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_y_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_accel_z_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/self_test_run
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_accel/trigger/current_trigger
-
-
-    # lsm6ds3_sign_motion
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger/current_trigger
-
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_sign_motion_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_sign_motion/trigger/current_trigger
-
-
-    # lsm6ds3_step_c
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/in_step_counter_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/max_delivery_rate
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/reset_counter
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger/current_trigger
-
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/in_step_counter_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/max_delivery_rate
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/reset_counter
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_step_counter_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_c/trigger/current_trigger
-
-
-    # lsm6ds3_step_d
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger/current_trigger
-
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_step_detector_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_step_d/trigger/current_trigger
-
-
-    # lsm6ds3_gyro
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_scale_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_raw
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_scale
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_available
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_run
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger/current_trigger
-
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_scale_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_x_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_y_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_raw
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/in_anglvel_z_scale
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/sampling_frequency_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_x_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_y_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_anglvel_z_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_available
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/self_test_run
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_gyro/trigger/current_trigger
-
-
-    # lsm6ds3_tilt
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/enable
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/length
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/dev
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/name
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_en
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_index
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_type
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger
-    chown system radio  /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger/current_trigger
-
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/enable
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/buffer/length
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/dev
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/name
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_tilt_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_en
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_index
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/scan_elements/in_timestamp_type
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger
-    chmod 0760    /sys/class/sensor_event/symlink/lsm6ds3_tilt/trigger/current_trigger
-
-
-    #grip
-
+    # grip
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip/buffer
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip/buffer/enable
@@ -1044,7 +982,6 @@ on boot
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip/scan_elements/in_timestamp_en
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip/scan_elements
 
-    chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip/buffer
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip/buffer/enable
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip/buffer/length
@@ -1054,9 +991,7 @@ on boot
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip/scan_elements/in_timestamp_en
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip/scan_elements
 
-    #grip_wifi
-
-    chown system radio /sys/class/sensor_event/symlink/sx9310_grip_wifi
+    # grip_wifi
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip_wifi/buffer
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip_wifi/buffer/enable
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip_wifi/buffer/length
@@ -1066,7 +1001,6 @@ on boot
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip_wifi/scan_elements/in_timestamp_en
     chown system radio /sys/class/sensor_event/symlink/sx9310_grip_wifi/scan_elements
 
-    chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip_wifi
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip_wifi/buffer
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip_wifi/buffer/enable
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip_wifi/buffer/length
@@ -1076,9 +1010,7 @@ on boot
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip_wifi/scan_elements/in_timestamp_en
     chmod 0760 /sys/class/sensor_event/symlink/sx9310_grip_wifi/scan_elements
 
-    #magnetic sensor
-
-    chown system radio /sys/class/sensor_event/symlink/yas_magnetometer
+    # Magnetic sensor
     chown system radio /sys/class/sensor_event/symlink/yas_magnetometer/buffer
     chown system radio /sys/class/sensor_event/symlink/yas_magnetometer/buffer/enable
     chown system radio /sys/class/sensor_event/symlink/yas_magnetometer/buffer/length
@@ -1110,7 +1042,6 @@ on boot
     chown system radio /sys/class/sensor_event/symlink/yas_magnetometer/trigger/current_trigger
     chown system radio /sys/class/sensor_event/symlink/yas_magnetometer/uevent
 
-    chmod 0760 /sys/class/sensor_event/symlink/yas_magnetometer
     chmod 0760 /sys/class/sensor_event/symlink/yas_magnetometer/buffer
     chmod 0760 /sys/class/sensor_event/symlink/yas_magnetometer/buffer/enable
     chmod 0760 /sys/class/sensor_event/symlink/yas_magnetometer/buffer/length
@@ -1142,9 +1073,7 @@ on boot
     chmod 0760 /sys/class/sensor_event/symlink/yas_magnetometer/trigger/current_trigger
     chmod 0760 /sys/class/sensor_event/symlink/yas_magnetometer/uevent
 
-    # light
-
-    chown system radio /sys/class/sensor_event/symlink/light_sensor
+    # Light
     chown system radio /sys/class/sensor_event/symlink/light_sensor/buffer
     chown system radio /sys/class/sensor_event/symlink/light_sensor/buffer/enable
     chown system radio /sys/class/sensor_event/symlink/light_sensor/buffer/length
@@ -1185,7 +1114,6 @@ on boot
     chown system radio /sys/class/sensor_event/symlink/light_sensor/scan_elements/in_timestamp_index
     chown system radio /sys/class/sensor_event/symlink/light_sensor/scan_elements/in_timestamp_type
 
-    chmod 0760 /sys/class/sensor_event/symlink/light_sensor
     chmod 0760 /sys/class/sensor_event/symlink/light_sensor/buffer
     chmod 0760 /sys/class/sensor_event/symlink/light_sensor/buffer/enable
     chmod 0760 /sys/class/sensor_event/symlink/light_sensor/buffer/length
@@ -1225,9 +1153,7 @@ on boot
     chmod 0760 /sys/class/sensor_event/symlink/light_sensor/scan_elements/in_timestamp_index
     chmod 0760 /sys/class/sensor_event/symlink/light_sensor/scan_elements/in_timestamp_type
 
-
-    # proximity
-    chown system radio /sys/class/sensor_event/symlink/proximity_sensor
+    # Proximity
     chown system radio /sys/class/sensor_event/symlink/proximity_sensor/buffer
     chown system radio /sys/class/sensor_event/symlink/proximity_sensor/buffer/enable
     chown system radio /sys/class/sensor_event/symlink/proximity_sensor/buffer/length
@@ -1248,7 +1174,6 @@ on boot
     chown system radio /sys/class/sensor_event/symlink/proximity_sensor/trigger/current_trigger
     chown system radio /sys/class/sensor_event/symlink/proximity_sensor/uevent
 
-    chmod 0760 /sys/class/sensor_event/symlink/proximity_sensor
     chmod 0760 /sys/class/sensor_event/symlink/proximity_sensor/buffer
     chmod 0760 /sys/class/sensor_event/symlink/proximity_sensor/buffer/enable
     chmod 0760 /sys/class/sensor_event/symlink/proximity_sensor/buffer/length
