@@ -8,10 +8,6 @@
     "target_path": "kernel/samsung/msm8976"
   },
   {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
-  },
-  {
     "repository": "android_hardware_samsung",
     "target_path": "hardware/samsung"
   },
