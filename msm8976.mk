@@ -119,7 +119,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    fingerprintd
+    fingerprintd \
+    fingerprint.msm8952
 
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
