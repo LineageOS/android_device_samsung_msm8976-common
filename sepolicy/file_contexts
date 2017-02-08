@@ -20,3 +20,6 @@
 
 # TimeKeep
 /system/bin/timekeep                         u:object_r:timekeep_exec:s0
+
+# Uncrypt
+/dev/block/bootdevice/by-name/fota           u:object_r:misc_block_device:s0
