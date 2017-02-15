@@ -1,1 +1,3 @@
+allow rmt_storage self:capability { dac_override net_raw };
+
 set_prop(rmt_storage, rmt_storage_prop)
