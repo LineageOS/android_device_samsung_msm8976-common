@@ -246,7 +246,7 @@ vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
 vendor/lib/libQSEEComAPI.so
 
-# FinegerPrint
+# FingerPrint
 lib64/libbauthserver.so
 lib64/libbauthtzcommon.so
 lib64/libegis_fp_normal_sensor_test.so
