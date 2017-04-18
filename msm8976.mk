@@ -105,8 +105,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8952 \
-    libc_shim
+    camera.msm8952
 
 # Display
 PRODUCT_PACKAGES += \
@@ -128,7 +127,6 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8952 \
     libcurl
 
 PRODUCT_PACKAGES += \

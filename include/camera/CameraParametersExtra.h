@@ -16,8 +16,12 @@
 
 #define CAMERA_PARAMETERS_EXTRA_C \
     const char CameraParameters::KEY_OIS_SUPPORTED[] = "ois_supported"; \
+    const char CameraParameters::KEY_SUPPORTED_EFFECT_PREVIEW_FPS_RANGE[] = "effect-available-fps-values"; \
+    const char CameraParameters::PIXEL_FORMAT_YUV420SP_NV21[] = "yuv420sp"; \
     int CameraParameters::getInt64(const char *key) const { return -1; }
 
 #define CAMERA_PARAMETERS_EXTRA_H \
     static const char KEY_OIS_SUPPORTED[]; \
+    static const char KEY_SUPPORTED_EFFECT_PREVIEW_FPS_RANGE[]; \
+    static const char PIXEL_FORMAT_YUV420SP_NV21[]; \
     int getInt64(const char *key) const;
