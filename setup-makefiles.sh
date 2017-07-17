@@ -34,7 +34,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" "true" "$1"
 
 # Copyright headers and guards
-write_headers "gts210vewifi gts28vewifi"
+write_headers "gts210vewifi gts210velte gts28vewifi"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
