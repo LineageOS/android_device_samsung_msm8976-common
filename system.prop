@@ -38,7 +38,7 @@ ro.bt.bdaddr_path=/efs/bluetooth/bt_addr
 ro.qualcomm.bt.hci_transport=smd
 
 # Camera
-media.camera.ts.monotonic=0
+media.camera.ts.monotonic=1
 
 # Dex2oat threads for faster app installation
 ro.sys.fw.dex2oat_thread_count=4
