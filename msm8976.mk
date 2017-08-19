@@ -123,7 +123,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    libcurl
+    libcurl \
+    libshims_get_process_name
 
 PRODUCT_PACKAGES += \
     flp.conf \
