@@ -110,11 +110,17 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.memtrack@1.0-impl \
     AdvancedDisplay \
     copybit.msm8952 \
     gralloc.msm8952 \
     hwcomposer.msm8952 \
     memtrack.msm8952 \
+    libgenlock \
     liboverlay
 
 # Fingerprint
@@ -208,6 +214,10 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     ueventd.qcom.rc
+
+# RenderScript HAL
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
 
 # TimeKeep
 PRODUCT_PACKAGES += \
