@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
     camera.msm8952 \
     libcamera_parameters_shim
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
