@@ -157,9 +157,10 @@ err_ret:
 }
 
 /* verify_trustzone("TZ_VERSION", "TZ_VERSION", ...) */
-Value * VerifyTrustZoneFn(const char *name, State *state, int argc, Expr *argv[]) {
+Value * VerifyTrustZoneFn(const char *name, State *state,
+                          const std::vector<std::unique_ptr<Expr>>& argv) {
     char current_tz_version[TZ_VER_BUF_LEN];
-    int i, ret;
+    int ret;
 
     ret = get_tz_version(current_tz_version, TZ_VER_BUF_LEN);
     if (ret) {
@@ -167,27 +168,20 @@ Value * VerifyTrustZoneFn(const char *name, State *state, int argc, Expr *argv[]
                 name, ret);
     }
 
-    char** tz_version = ReadVarArgs(state, argc, argv);
-    if (tz_version == NULL) {
+    std::vector<std::string> args;
+    if (!ReadArgs(state, argv, &args)) {
         return ErrorAbort(state, kArgsParsingFailure, "%s() error parsing arguments", name);
     }
 
-    ret = 0;
-    for (i = 0; i < argc; i++) {
+    for (auto& tz_version : args) {
         uiPrintf(state, "Comparing TZ version %s to %s",
-                tz_version[i], current_tz_version);
-        if (strncmp(tz_version[i], current_tz_version, strlen(tz_version[i])) == 0) {
-            ret = 1;
-            break;
+                tz_version.c_str(), current_tz_version);
+        if (strncmp(tz_version.c_str(), current_tz_version, tz_version.length()) == 0) {
+            return StringValue(strdup("1"));
         }
     }
 
-    for (i = 0; i < argc; i++) {
-        free(tz_version[i]);
-    }
-    free(tz_version);
-
-    return StringValue(strdup(ret ? "1" : "0"));
+    return StringValue(strdup("0"));
 }
 
 void Register_librecovery_updater_samsung() {
