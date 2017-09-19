@@ -450,8 +450,8 @@ vendor/lib/libthermalclient.so
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
 
-# WideVine
-vendor/lib/mediadrm/libwvdrmengine.so
+# WideVine - from angler
+vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
 
 # WiFi Firmware
 etc/firmware/bdwlan30.bin
