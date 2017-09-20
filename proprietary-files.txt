@@ -8,7 +8,7 @@ etc/Headset_cal.acdb
 etc/Speaker_cal.acdb
 
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib/libadsp_default_listener.so
@@ -48,12 +48,12 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
-bin/wcnss_filter
+bin/wcnss_filter:vendor/bin/wcnss_filter
 etc/firmware/btfw32.tlv
 etc/firmware/btnv32.bin
 
 # Camera
-bin/mm-qcamera-daemon
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 etc/camera/msm8976_camera_tabs2.xml
 etc/camera/s5k4h5yc_dw9807_chromatix.xml
 etc/camera/s5k6b2yx_chromatix.xml
@@ -238,7 +238,7 @@ etc/firmware/ois_SP_BU24219.bin
 etc/firmware/ois_VE_BU24219.bin
 
 # DRM
-bin/qseecomd
+bin/qseecomd:vendor/bin/qseecomd
 vendor/bin/qseeproxydaemon
 vendor/lib64/lib-sec-disp.so
 vendor/lib64/libdrmfs.so
@@ -269,10 +269,10 @@ lib/libsynaFpSensorTestNwd.so
 vendor/lib64/hw/gatekeeper.msm8952.so
 
 # GPS
-bin/garden_app
-bin/loc_launcher
-bin/xtwifi-client
-bin/xtwifi-inet-agent
+bin/garden_app:vendor/bin/garden_app
+bin/loc_launcher:vendor/bin/loc_launcher
+bin/xtwifi-client:vendor/bin/xtwifi-client
+bin/xtwifi-inet-agent:vendor/bin/xtwifi-inet-agent
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/izat.xt.srv.xml
 framework/com.qti.location.sdk.jar
@@ -384,14 +384,14 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 
 # Perf
-bin/msm_irqbalance
+bin/msm_irqbalance:vendor/bin/msm_irqbalance
 vendor/bin/perfd
 vendor/lib64/libqti-perfd-client.so
 vendor/lib/libqti-perfd-client.so
 
 # Peripheral manager
-bin/pm-proxy
-bin/pm-service
+bin/pm-proxy:vendor/bin/pm-proxy
+bin/pm-service:vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 vendor/lib/libperipheral_client.so
 
@@ -401,7 +401,7 @@ vendor/lib64/libmm-als.so
 vendor/lib/libmm-als.so
 
 # QMI
-bin/irsc_util
+bin/irsc_util:vendor/bin/irsc_util
 vendor/lib64/libdiag.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
@@ -429,8 +429,8 @@ vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
 # Radio
-bin/rmt_storage
-bin/tftp_server
+bin/rmt_storage:vendor/bin/rmt_storage
+bin/tftp_server:vendor/bin/tftp_server
 vendor/lib64/libmdmdetect.so
 vendor/lib/libmdmdetect.so
 

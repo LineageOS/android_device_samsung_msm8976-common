@@ -1368,18 +1368,18 @@ service dpmd /system/bin/dpmd
     socket dpmd stream 660 root system
     socket dpmd stream 660 root system
 
-service irsc_util /system/bin/irsc_util "/etc/sec_config"
+service irsc_util /vendor/bin/irsc_util "/etc/sec_config"
     class main
     user root
     oneshot
 
-service rmt_storage /system/bin/rmt_storage
+service rmt_storage /vendor/bin/rmt_storage
     class core
     user root
     group wakelock
     writepid /dev/cpuset/system-background/tasks
 
-service tftp_server /system/bin/tftp_server
+service tftp_server /vendor/bin/tftp_server
     class main
     user root
     writepid /dev/cpuset/system-background/tasks
@@ -1390,7 +1390,7 @@ on property:wc_transport.start_hci=true
 on property:wc_transport.start_hci=false
     stop start_hci_filter
 
-service start_hci_filter /system/bin/wcnss_filter
+service start_hci_filter /vendor/bin/wcnss_filter
     class late_start
     user bluetooth
     group bluetooth qcom_diag
@@ -1411,7 +1411,7 @@ on property:ro.data.large_tcp_window_size=true
 on property:sys.sysctl.tcp_adv_win_scale=*
     write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
 
-service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
+service wpa_supplicant /system/vendor/bin/hw/wpa_supplicant \
     -ip2p0 -Dnl80211 -c/data/misc/wifi/p2p_supplicant.conf \
     -I/system/etc/wifi/p2p_supplicant_overlay.conf -N \
     -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
@@ -1427,7 +1427,7 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
-service loc_launcher /system/bin/loc_launcher
+service loc_launcher /vendor/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
     group gps inet qcom_diag wifi
@@ -1441,38 +1441,38 @@ service charger /charger
     group system graphics
     seclabel u:r:charger:s0
 
-service msm_irqbal_lb /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_little_big.conf
+service msm_irqbal_lb /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance_little_big.conf
     class core
     user root
     group root
     writepid /dev/cpuset/system-background/tasks
 
 # Start camera server as daemon
-service qcamerasvr /system/bin/mm-qcamera-daemon
+service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input graphics
     writepid /dev/cpuset/camera-daemon/tasks
 
-service qseecomd /system/bin/qseecomd
+service qseecomd /vendor/bin/qseecomd
     class core
     user root
     group root
     writepid /dev/cpuset/system-background/tasks
 
-service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
+service qseeproxydaemon /vendor/bin/qseeproxydaemon
     class late_start
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
 
-service perfd /system/vendor/bin/perfd
+service perfd /vendor/bin/perfd
     class main
     user root
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service thermal-engine /system/vendor/bin/thermal-engine
+service thermal-engine /vendor/bin/thermal-engine
     class main
     user root
     socket thermal-send-client stream 0666 system system
@@ -1493,18 +1493,18 @@ service audiod /system/bin/audiod
     user system
     group system
 
-service adsprpcd /system/bin/adsprpcd
+service adsprpcd /vendor/bin/adsprpcd
     class main
     user media
     group media
 
-service per_mgr /system/bin/pm-service
+service per_mgr /vendor/bin/pm-service
     class core
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
 
-service per_proxy /system/bin/pm-proxy
+service per_proxy /vendor/bin/pm-proxy
     class core
     user system
     group system
