@@ -1,25 +1,31 @@
 # Cache
-/dev/block/bootdevice/by-name/cache          u:object_r:cache_block_device:s0
+/dev/block/platform/soc\.0/7824900\.sdhci/by-name/cache         u:object_r:cache_block_device:s0
+
+# Debug
+/sys/kernel/debug/rmt_storage(/.*)?                             u:object_r:debugfs_rmt:s0
 
 # EFS
-/dev/block/bootdevice/by-name/efs            u:object_r:efs_block_device:s0
-/efs/bluetooth(/.*)?                         u:object_r:bluetooth_efs_file:s0
-/efs/FactoryApp(/.*)?                        u:object_r:app_efs_file:s0
-/efs/wifi(/.*)?                              u:object_r:wifi_efs_file:s0
+/dev/block/platform/soc\.0/7824900\.sdhci/by-name/efs           u:object_r:efs_block_device:s0
+/efs/bluetooth(/.*)?                                            u:object_r:bluetooth_efs_file:s0
+/efs/FactoryApp(/.*)?                                           u:object_r:app_efs_file:s0
+/efs/wifi(/.*)?                                                 u:object_r:wifi_efs_file:s0
 
 # FRP
-/dev/block/bootdevice/by-name/persistent     u:object_r:frp_block_device:s0
+/dev/block/platform/soc\.0/7824900\.sdhci/by-name/persistent    u:object_r:frp_block_device:s0
 
 # Fingerprint
-/dev/vfsspi                                  u:object_r:vfsspi_device:s0
-/data/biometrics(/.*)?                       u:object_r:biometrics_data_file:s0
+/dev/vfsspi                                                     u:object_r:vfsspi_device:s0
+/data/biometrics(/.*)?                                          u:object_r:biometrics_data_file:s0
 
 # mDNIe
-/sys/devices/virtual/mdnie/mdnie/mode        u:object_r:sysfs_mdnie:s0
-/sys/devices/virtual/mdnie/mdnie/scenario    u:object_r:sysfs_mdnie:s0
+/sys/devices/virtual/mdnie/mdnie/mode                           u:object_r:sysfs_mdnie:s0
+/sys/devices/virtual/mdnie/mdnie/scenario                       u:object_r:sysfs_mdnie:s0
+
+# SEC
+/sys/devices/virtual/sec/sec_key(/.*)?                          u:object_r:sysfs_sec_key:s0
 
 # TimeKeep
-/system/bin/timekeep                         u:object_r:timekeep_exec:s0
+/system/bin/timekeep                                            u:object_r:timekeep_exec:s0
 
 # Uncrypt
-/dev/block/bootdevice/by-name/fota           u:object_r:misc_block_device:s0
+/dev/block/platform/soc\.0/7824900\.sdhci/by-name/fota          u:object_r:misc_block_device:s0
