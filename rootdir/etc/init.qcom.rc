@@ -70,8 +70,6 @@ on fs
     chmod 0771 /efs
     restorecon_recursive /efs
 
-    rm -rf /efs/dmverity
-
 on boot
     # Bluetooth
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
