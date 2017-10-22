@@ -109,8 +109,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
     hardware/cyanogen/cmhw \
-    hardware/samsung/cmhw \
-    $(VENDOR_PATH)/cmhw
+    hardware/samsung/cmhw
 
 # Dex
 ifeq ($(HOST_OS),linux)
