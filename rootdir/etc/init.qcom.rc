@@ -1366,7 +1366,7 @@ service dpmd /system/bin/dpmd
     socket dpmd stream 660 root system
     socket dpmd stream 660 root system
 
-service irsc_util /vendor/bin/irsc_util "/etc/sec_config"
+service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
     user root
     oneshot
