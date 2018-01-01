@@ -1463,11 +1463,6 @@ service thermal-engine /vendor/bin/thermal-engine
     group root
     writepid /dev/cpuset/system-background/tasks
 
-service audiod /system/bin/audiod
-    class late_start
-    user system
-    group system
-
 service adsprpcd /vendor/bin/adsprpcd
     class main
     user media
