@@ -1469,13 +1469,6 @@ service thermal-engine /vendor/bin/thermal-engine
     group root
     writepid /dev/cpuset/system-background/tasks
 
-service timekeep /system/bin/timekeep restore
-    class late_start
-    user root
-    group root
-    oneshot
-    writepid /dev/cpuset/system-background/tasks
-
 service audiod /system/bin/audiod
     class late_start
     user system
