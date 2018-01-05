@@ -65,7 +65,6 @@ media.msm8956.version=0
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
-persist.media.treble_omx=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
