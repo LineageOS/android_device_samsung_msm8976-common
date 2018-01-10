@@ -1,16 +1,10 @@
 type timekeep, domain;
 type timekeep_exec, exec_type, vendor_file_type, file_type;
 
-# Started by init
 init_daemon_domain(timekeep)
 
-allow timekeep self:capability {
-    fowner
-    fsetid
-    sys_time
-    dac_override
-    dac_read_search
-};
+# Grant permission to set system time and to set the real-time lock
+allow timekeep self:capability { fowner sys_time };
 
 allow timekeep time_data_file:file create_file_perms;
 allow timekeep time_data_file:dir create_dir_perms;
