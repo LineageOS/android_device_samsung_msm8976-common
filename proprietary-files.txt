@@ -437,10 +437,6 @@ bin/tftp_server:vendor/bin/tftp_server
 vendor/lib64/libmdmdetect.so
 vendor/lib/libmdmdetect.so
 
-# SEC
-lib64/libsecnativefeature.so
-lib/libsecnativefeature.so
-
 # Thermal
 vendor/bin/thermal-engine
 vendor/lib64/libsmemlog.so
