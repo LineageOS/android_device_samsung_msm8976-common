@@ -1,5 +1,3 @@
-allow system_server binder_per_mgr_service:service_manager find;
-
 allow system_server efs_file:dir search;
 
 allow system_server qti_debugfs:file r_file_perms;

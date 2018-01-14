@@ -1,4 +1,0 @@
-binder_use(qseeproxy)
-binder_service(qseeproxy)
-
-allow qseeproxy binder_qseeproxy_service:service_manager add;
