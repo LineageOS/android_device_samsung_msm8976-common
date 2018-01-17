@@ -242,7 +242,6 @@ etc/firmware/ois_VE_BU24219.bin
 
 # DRM
 bin/qseecomd:vendor/bin/qseecomd
-vendor/bin/qseeproxydaemon
 vendor/lib64/lib-sec-disp.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so

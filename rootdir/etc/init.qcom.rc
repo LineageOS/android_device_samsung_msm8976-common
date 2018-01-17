@@ -1448,12 +1448,6 @@ service qseecomd /vendor/bin/qseecomd
     group root
     writepid /dev/cpuset/system-background/tasks
 
-service qseeproxydaemon /vendor/bin/qseeproxydaemon
-    class late_start
-    user system
-    group system
-    writepid /dev/cpuset/system-background/tasks
-
 service perfd /vendor/bin/perfd
     class main
     user root
