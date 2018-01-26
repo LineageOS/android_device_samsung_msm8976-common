@@ -21,12 +21,23 @@
 /dev/vfsspi                                                     u:object_r:vfsspi_device:s0
 /data/biometrics(/.*)?                                          u:object_r:biometrics_data_file:s0
 
+# Lights
+/sys/devices/virtual/sec/sec_touchkey/brightness                u:object_r:sysfs_leds:s0
+
 # mDNIe
 /sys/devices/virtual/mdnie/mdnie/mode                           u:object_r:sysfs_mdnie:s0
 /sys/devices/virtual/mdnie/mdnie/scenario                       u:object_r:sysfs_mdnie:s0
 
 # SEC
 /sys/devices/virtual/sec/sec_key(/.*)?                          u:object_r:sysfs_sec_key:s0
+
+# Sensors
+/data/iNemo_gbias.dat                                           u:object_r:sensors_data_file:s0
+/data/iNemoEngine_gbias.dat                                     u:object_r:sensors_data_file:s0
+/data/system/yas_lib.cfg                                        u:object_r:sensors_data_file:s0
+/sys/bus/iio/devices                                            u:object_r:sysfs_sensors:s0
+/sys/devices/.*/i2c-[0-9]/[0-9]-[0-9a-f]+/iio:device[0-9](/.*)? u:object_r:sysfs_sensors:s0
+/sys/devices/iio:device[0-9](/.*)?                              u:object_r:sysfs_sensors:s0
 
 # TimeKeep
 /(vendor|system/vendor)/bin/timekeep                            u:object_r:timekeep_exec:s0
