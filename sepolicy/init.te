@@ -1,3 +1,2 @@
-allow init { domain -lmkd -crash_dump }:process noatsecure;
 allow init debugfs:file write;
 allow init sysfs:lnk_file setattr;
