@@ -1,3 +1,8 @@
 allow system_server qti_debugfs:file r_file_perms;
 
+allow system_server sensors_data_file:file rw_file_perms;
+allow system_server iio_device:chr_file r_file_perms;
+
 allow system_server sysfs_mdnie:file rw_file_perms;
+
+r_dir_file(system_server, app_efs_file)
