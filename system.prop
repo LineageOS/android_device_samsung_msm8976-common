@@ -31,6 +31,7 @@ qcom.bluetooth.soc=rome
 ro.bluetooth.hfp.ver=1.7
 ro.bt.bdaddr_path=/efs/bluetooth/bt_addr
 ro.qualcomm.bt.hci_transport=smd
+vendor.qcom.bluetooth.soc=rome
 
 # Camera
 media.camera.ts.monotonic=1
