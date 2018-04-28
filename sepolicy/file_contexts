@@ -2,9 +2,6 @@
 /sys/devices/bt_qca6174\.[0-9]+/extldo                          u:object_r:sysfs_bluetooth_writable:s0
 /sys/devices/bt_qca6174\.[0-9]+/rfkill/rfkill0/state            u:object_r:sysfs_bluetooth_writable:s0
 
-# Cache
-/dev/block/platform/soc\.0/7824900\.sdhci/by-name/cache         u:object_r:cache_block_device:s0
-
 # EFS
 /dev/block/platform/soc\.0/7824900\.sdhci/by-name/efs           u:object_r:efs_block_device:s0
 /efs/bluetooth(/.*)?                                            u:object_r:bluetooth_efs_file:s0
