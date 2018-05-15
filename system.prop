@@ -64,6 +64,9 @@ media.aac_51_output_enabled=true
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Security patch level
+ro.lineage.build.vendor_security_patch=2018-01-01
+
 # TCP
 net.tcp.2g_init_rwnd=10
 
