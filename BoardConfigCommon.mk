@@ -171,7 +171,8 @@ TARGET_PROVIDES_KEYMASTER := true
 
 # Lineage hardware
 BOARD_HARDWARE_CLASS += \
-    hardware/samsung/lineagehw
+    hardware/samsung/lineagehw \
+    $(VENDOR_PATH)/lineagehw
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
