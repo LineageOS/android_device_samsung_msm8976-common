@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "faea4d58_db4655c9",
+        "filename": "lineagehw/org/lineage/hardware/ReadingEnhancement.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2018-06-02T18:53:03Z",
+      "side": 1,
+      "message": "?",
+      "range": {
+        "startLine": 3,
+        "startChar": 22,
+        "endLine": 3,
+        "endChar": 31
+      },
+      "revId": "4525dfd4ac9d739963af0f281e0addd5d943b239",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "165fa585_7c9379a1",
+        "filename": "lineagehw/org/lineage/hardware/ReadingEnhancement.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2018-06-02T18:53:03Z",
+      "side": 1,
+      "message": "need a new line",
+      "revId": "4525dfd4ac9d739963af0f281e0addd5d943b239",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
