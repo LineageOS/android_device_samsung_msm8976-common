@@ -59,7 +59,7 @@ BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8976
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
