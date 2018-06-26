@@ -37,8 +37,6 @@ TARGET_SCREEN_WIDTH := 1536
 # Device characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
-$(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
