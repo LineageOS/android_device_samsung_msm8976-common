@@ -27,12 +27,36 @@ public class ReadingEnhancement {
     private static final String ACCESSIBILITY_FILE =
             "/sys/devices/virtual/mdnie/mdnie/accessibility";
 
+    /**
+     * Whether device supports Reader Mode
+     *
+     * @return boolean Supported devices must return always true
+     */
     public static boolean isSupported() {
-        return FileUtils.isFileWritable(ACCESSIBILITY_FILE);
+        return FileUtils.isFileWritable(ACCESSIBILITY_FILE) &&
+                FileUtils.isFileReadable(ACCESSIBILITY_FILE);
     }
 
-    public static boolean setGrayscale(boolean state) {
-        return FileUtils.writeLine(ACCESSIBILITY_FILE, state ? "4" : "0");
+    /**
+     * This method return the current activation status of Reader Mode
+     *
+     * @return boolean Must be false when Reader Mode is not supported or not activated,
+     * or the operation failed while reading the status; true in any other case.
+     */
+    public static boolean isEnabled() {
+        return FileUtils.readOneLine(ACCESSIBILITY_FILE).equals(
+                "Current accessibility : DSI0 : GRAYSCALE ");
+    }
+
+    /**
+     * This method allows to setup Reader Mode
+     *
+     * @param status The new Reader Mode status
+     * @return boolean Must be false if Reader Mode is not supported or the operation
+     * failed; true in any other case.
+     */
+    public static boolean setEnabled(boolean status) {
+        return FileUtils.writeLine(ACCESSIBILITY_FILE, status ? "4" : "0");
     }
 
 }
