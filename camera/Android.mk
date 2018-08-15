@@ -37,9 +37,10 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    CameraParameters.cpp
+    CameraParameters.cpp \
+    Fence.cpp
 
-LOCAL_MODULE := libcamera_parameters_shim
+LOCAL_MODULE := libshims_camera
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS := optional
 
