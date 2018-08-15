@@ -10,6 +10,7 @@
 # Fingerprint
 /dev/vfsspi                                                     u:object_r:vfsspi_device:s0
 /data/biometrics(/.*)?                                          u:object_r:biometrics_data_file:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service\.samsung_8976    u:object_r:hal_fingerprint_default_exec:s0
 
 # Lights
 /sys/devices/virtual/sec/sec_touchkey/brightness                u:object_r:sysfs_leds:s0
