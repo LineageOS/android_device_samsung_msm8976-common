@@ -106,6 +106,10 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# Destroyed mutex usage whitelist
+TARGET_DESTROYED_MUTEX_USAGE_WHITELIST := \
+   /vendor/bin/hw/android.hardware.camera.provider@2.4-service
+
 # Dex
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
