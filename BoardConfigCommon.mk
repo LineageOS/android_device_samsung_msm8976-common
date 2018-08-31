@@ -104,6 +104,8 @@ TARGET_BOARD_INFO_FILE := $(VENDOR_PATH)/board-info.txt
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /system/vendor/bin/hw/android.hardware.camera.provider@2.4-service=23
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Charger
