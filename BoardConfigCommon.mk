@@ -101,6 +101,8 @@ QCOM_BT_USE_SMD_TTY := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /vendor/bin/hw/android.hardware.camera.provider@2.4-service=23
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Charger
