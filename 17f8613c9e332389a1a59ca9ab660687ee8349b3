@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c2c9d691_35ef2a59",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-09-07T16:15:49Z",
+      "side": 1,
+      "message": "Didn\u0027t you forget to remove this?",
+      "revId": "17f8613c9e332389a1a59ca9ab660687ee8349b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
