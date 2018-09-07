@@ -49,7 +49,7 @@ vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
 # aptX - from marlin - OPM1.171019.011
-bin/wcnss_filter:vendor/bin/wcnss_filter
+vendor/bin/wcnss_filter|3dbb01689448cbfa8a90274fa18140aa460c1d66
 etc/firmware/btfw32.tlv
 etc/firmware/btnv32.bin
 lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
