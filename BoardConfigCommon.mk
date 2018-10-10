@@ -174,6 +174,9 @@ JAVA_SOURCE_OVERLAYS := \
     org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
     org.lineageos.hardware|$(VENDOR_PATH)/lineagehw|**/*.java
 
+# Network Routing
+TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
+
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
