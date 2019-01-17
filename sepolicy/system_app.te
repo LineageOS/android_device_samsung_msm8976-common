@@ -3,4 +3,8 @@ allow system_app sysfs_mdnie:file rw_file_perms;
 # TimeKeep Java service
 allow system_app time_data_file:dir rw_dir_perms;
 allow system_app time_data_file:file rw_file_perms;
+
+allow system_app sysfs_rtc:dir search;
+allow system_app sysfs_rtc:file r_file_perms;
+
 set_prop(system_app, timekeep_prop)
