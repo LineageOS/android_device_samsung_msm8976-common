@@ -1,6 +1,12 @@
 # Camera
 /sys/devices/virtual/camera(/.*)?                               u:object_r:sysfs_camera:s0
 
+# Charger
+/sys/devices(/platform)?/soc\.0/i2c\.[0-9]+/i2c-[0-9]/[0-9]-[a-z0-9]+/sm5703-charger/power_supply(/.*)?    u:object_r:sysfs_batteryinfo:s0
+/sys/devices(/platform)?/soc\.0/i2c\.[0-9]+/i2c-[0-9]/[0-9]-[a-z0-9]+/power_supply(/.*)?                   u:object_r:sysfs_batteryinfo:s0
+/sys/devices(/platform)?/soc\.0/78db000\.usb/power_supply(/.*)?                                            u:object_r:sysfs_batteryinfo:s0
+/sys/devices/battery\.[0-9]+/power_supply(/.*)?                                                            u:object_r:sysfs_batteryinfo:s0
+
 # EFS
 /dev/block/platform/soc\.0/7824900\.sdhci/by-name/efs           u:object_r:efs_block_device:s0
 /efs/bluetooth(/.*)?                                            u:object_r:bluetooth_efs_file:s0
