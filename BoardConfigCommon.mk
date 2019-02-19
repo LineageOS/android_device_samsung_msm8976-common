@@ -169,11 +169,6 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
-# Lineage hardware
-JAVA_SOURCE_OVERLAYS := \
-    org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
-    org.lineageos.hardware|$(VENDOR_PATH)/lineagehw|**/*.java
-
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 

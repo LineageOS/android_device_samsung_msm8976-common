@@ -20,12 +20,17 @@
 /dev/vfsspi                                                     u:object_r:vfsspi_device:s0
 /data/biometrics(/.*)?                                          u:object_r:biometrics_data_file:s0
 
+# Graphics
+/sys/devices/virtual/lcd/panel(/.*)?                            u:object_r:sysfs_graphics:s0
+
 # Lights
 /sys/devices/virtual/sec/sec_touchkey/brightness                u:object_r:sysfs_leds:s0
 
+# LiveDisplay
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-qcom    u:object_r:hal_lineage_livedisplay_default_exec:s0
+
 # mDNIe
-/sys/devices/virtual/mdnie/mdnie/mode                           u:object_r:sysfs_mdnie:s0
-/sys/devices/virtual/mdnie/mdnie/scenario                       u:object_r:sysfs_mdnie:s0
+/sys/devices/virtual/mdnie/mdnie(/.*)?                          u:object_r:sysfs_mdnie:s0
 
 # SEC
 /sys/devices/virtual/sec/sec_key(/.*)?                          u:object_r:sysfs_sec_key:s0
