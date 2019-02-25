@@ -1,4 +1,0 @@
-allow cameraserver camera_data_file:dir w_dir_perms;
-
-allow cameraserver sysfs_camera:dir search;
-allow cameraserver sysfs_camera:file rw_file_perms;
