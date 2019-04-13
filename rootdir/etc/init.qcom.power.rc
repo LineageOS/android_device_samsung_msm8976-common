@@ -145,10 +145,7 @@ on enable-low-power
     write /proc/sys/kernel/sched_enable_thread_grouping 1
 
     # LMK & Process reclaim
-    write /sys/module/lowmemorykiller/parameters/adj_max_shift 354
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,32256,55296,80640"
-    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 81250
 
     write /sys/module/process_reclaim/parameters/enable_process_reclaim 1
     write /sys/module/process_reclaim/parameters/min_score_adj 354
