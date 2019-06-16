@@ -27,7 +27,7 @@
 /sys/devices/virtual/sec/sec_touchkey/brightness                u:object_r:sysfs_leds:s0
 
 # LiveDisplay
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-qcom    u:object_r:hal_lineage_livedisplay_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.samsung-qcom    u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
 
 # mDNIe
 /sys/devices/virtual/mdnie/mdnie(/.*)?                          u:object_r:sysfs_mdnie:s0
